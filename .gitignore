@@ -1,0 +1,5 @@
+db.sqlite3
+.env
+media/product_photos/*
+media/profile_photos/*
+media/category_photos/*
