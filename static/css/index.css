@@ -50,7 +50,7 @@
     opacity: 1;
 }
 
-  .overlay {
+.overlay {
     position: absolute; 
     bottom: 0; 
     background: rgb(0, 0, 0);
@@ -64,5 +64,82 @@
     font-size: 20px;
     padding: 20px;
     text-align: center;
-  }
-  
+}
+
+.list-it{
+    list-style-type: none;
+}
+
+.active-link{
+    color: black;
+    padding-bottom: 5px;
+    border-bottom: 4px solid black;
+}
+
+.sport-opacyty{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: black; /* Couleur de fond semi-transparente */
+    opacity: 0.8; 
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-sli{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.sport-row{
+    display: flex;
+}
+
+.sport-items{
+    margin-top: 3px;
+    width: 25%;
+    max-width: 50%;
+    min-width: 24%;
+}
+
+.recommended-item{
+    width: 19%;
+    height: 350px;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+/* .recommended-product{
+    position: absolute;
+    bottom: 20%;
+    height: 15%;
+    width: 40%;
+} */
+
+.overlay {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    bottom: 20%;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 15%;
+    background: white; /* Couleur de fond semi-transparente */
+    opacity: 0; /* L'overlay est invisible au début */
+    transition: opacity 0.3s ease; /* Transition en douceur de l'opacité */
+}
+
+.overlay-container:hover .overlay {
+    opacity: 1; /* L'overlay devient visible au survol */
+}
