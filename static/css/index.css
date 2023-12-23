@@ -126,7 +126,7 @@
     width: 40%;
 } */
 
-.overlay {
+ .overlay-recommended {
     margin: 0px;
     padding: 0px;
     position: absolute;
@@ -135,11 +135,15 @@
     left: 50%;
     transform: translateX(-50%);
     height: 15%;
-    background: white; /* Couleur de fond semi-transparente */
-    opacity: 0; /* L'overlay est invisible au début */
-    transition: opacity 0.3s ease; /* Transition en douceur de l'opacité */
+    background: white; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+} 
+
+.overlay-container:hover .overlay-recommended {
+    opacity: 1; /* L'overlay devient visible au survol */
 }
 
-.overlay-container:hover .overlay {
-    opacity: 1; /* L'overlay devient visible au survol */
+.company-info:hover{
+    color: red;
 }
